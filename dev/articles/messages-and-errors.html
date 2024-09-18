@@ -299,7 +299,7 @@ up string for each row of the dribble, i.e. for each Drive file.</p>
 <span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> See gargle's "Non-interactive auth" vignette for more details:</span></span>
 <span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> <span style="color: #0000BB; font-style: italic;">&lt;https://gargle.r-lib.org/articles/non-interactive-auth.html&gt;</span></span></span>
 <span><span class="fu">gargle_map_cli</span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Error in eval(expr, envir, enclos): object 'dat' not found</span></span></code></pre></div>
+<span><span class="co">#&gt; Error: object 'dat' not found</span></span></code></pre></div>
 <p><code>gargle_map_cli.dribble()</code> also allows a custom template,
 but it’s a more complicated and less common situation than for
 <code>character</code>. We won’t get into that here. (I don’t consider
@@ -343,7 +343,7 @@ and does aesthetically pleasing truncation.</p>
 <span>  <span class="st">"Some Drive files:"</span>,</span>
 <span>  <span class="fu">bulletize</span><span class="op">(</span><span class="fu">gargle_map_cli</span><span class="op">(</span><span class="va">dat</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Error in eval(expr, envir, enclos): object 'dat' not found</span></span></code></pre></div>
+<span><span class="co">#&gt; Error: object 'dat' not found</span></span></code></pre></div>
 <p>It’s conceivable that cli will gain a better way of vectorization,
 but this works for now.</p>
 <p>Known dysfunction: it’s inefficient to <code>gargle_map_cli()</code>
@@ -378,7 +378,7 @@ same as <code>drive_bullets()</code>.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
 </div>
 
   </div></footer>
